@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Park Equipment Manufacturer | Professional Water Ride Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        /* 全局样式 */
+        :root {
+            --primary: #0099ff;
+            --secondary: #0066cc;
+            --light: #f0f8ff;
+            --dark: #333;
+        }
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        /* 头部 */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        /* 英雄区 */
+        .hero {
+            background: var(--light);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: var(--secondary);
+        }
+        /* 图片样式 */
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+        /* 产品区 */
+        .products {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: var(--secondary);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card h3 {
+            padding: 1rem;
+            color: var(--secondary);
+        }
+        .product-card p {
+            padding: 0 1rem 1.5rem;
+            color: #666;
+        }
+        /* 关于我们 */
+        .about {
+            background: var(--light);
+            padding: 4rem 5%;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        /* 联系我们 */
+        .contact {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-info {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .contact-item {
+            text-align: left;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="header-container">
+            <div class="logo">WaterPark Pro</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区 -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Professional Water Park Equipment Manufacturer</h1>
+            <p>We design, manufacture and install high-quality water rides, slides and play structures for water parks worldwide. With 15+ years of experience, we deliver safe, innovative and profitable solutions for your business.</p>
+            <!-- 首页banner图：替换成你的banner.jpg -->
+            <img src="banner.jpg" alt="Water Park Equipment Banner" class="img-responsive">
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- 产品展示区 -->
+    <section class="products" id="products">
+        <h2 class="section-title">Our Core Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <!-- 产品图1：替换成slide1.jpg -->
+                <img src="slide1.jpg" alt="Water Slide" class="img-responsive">
+                <h3>High-Speed Water Slides</h3>
+                <p>Thrilling fiberglass water slides for all age groups, customizable in length and shape.</p>
+            </div>
+            <div class="product-card">
+                <!-- 产品图2：替换成play1.jpg -->
+                <img src="play1.jpg" alt="Water Play Structure" class="img-responsive">
+                <h3>Kids Water Play Structures</h3>
+                <p>Safe and fun interactive play systems for children's water play areas.</p>
+            </div>
+            <div class="product-card">
+                <!-- 产品图3：替换成wave.jpg -->
+                <img src="wave.jpg" alt="Wave Pool" class="img-responsive">
+                <h3>Wave Pool Systems</h3>
+                <p>Custom wave pool solutions to create the ultimate beach experience in your park.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div>
+                <h2 class="section-title" style="text-align: left;">About Our Factory</h2>
+                <p>We are a leading manufacturer of water park equipment based in China, serving clients in over 30 countries. Our factory covers 20,000+ square meters, with a professional R&D team and strict quality control system.</p>
+                <p>We provide one-stop solutions from design, production, installation to after-sales service, ensuring your water park project is completed on time and within budget.</p>
+                <a href="#contact" class="btn" style="margin-top: 1rem;">Learn More</a>
+            </div>
+            <div>
+                <!-- 工厂图：替换成factory.jpg -->
+                <img src="factory.jpg" alt="Our Factory" class="img-responsive">
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Ready to start your water park project? Contact us today for a free consultation and quote.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>sales@waterparkpro.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>WhatsApp</h3>
+                <p>+86 138XXXXXXXXX</p>
+            </div>
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>Guangzhou, Guangdong, China</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 WaterPark Pro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
